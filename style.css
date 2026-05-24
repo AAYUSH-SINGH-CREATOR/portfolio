@@ -88,6 +88,35 @@
     font-size: 45px;
 }
 
+#bbutton {
+    color: white;
+    padding: 12px;
+    width: 120px;
+    background-color: #f84949;
+    box-shadow: 0 0 4px black;
+    border: 0 transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    transform-origin: left;
+    transition: all 0.8s;
+    transform: scaleX(0);
+}
+
+.slider:hover::before {
+    z-index: -1;
+    transform: scaleX(1);
+}
 
 .hero-wrapper {
     position: relative;
@@ -229,9 +258,8 @@
 
 /* PROJECT SECTION start */
 
-.projectsection{
+.projectsection {
     position: relative;
-    border: 3px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -240,44 +268,44 @@
     background-color: #e7e7e7;
 }
 
-.heronaam{
-    font-size: 100px;
+.heronaam {
+    font-size: 150px;
     color: #e7e7e7;
 }
-.projectsection h1{
-    /* position: absolute; */
+
+.projectsection h1 {
     color: #f84949;
-    margin: 0;
+    margin: 0, auto;
     font-size: 5.99rem;
 }
 
-#card1{
+#card1 {
     background-image: url(Images/projects/Project1.png);
     background-size: cover;
     background-position: center;
 }
-#card2{
+
+#card2 {
     background-image: url(Images/projects/Project2.png);
     background-size: cover;
     background-position: center;
 }
-#card3{
+
+#card3 {
     background-image: url(Images/projects/Project3.png);
     background-size: cover;
     background-position: center;
 }
-#card4{
+
+#card4 {
     background-image: url(Images/projects/Project4.png);
     background-size: cover;
     background-position: center;
 }
 
-.projectcards{
-    /* padding: 200px; */
-    /* border: 2px solid orangered; */
+.projectcards {
     display: flex;
     flex-direction: column;
-
     gap: 100px;
     width: 100%;
     overflow: hidden;
@@ -285,16 +313,17 @@
 
 }
 
-.leftcard{
+.leftcard {
     position: relative;
     margin: 50px;
     overflow-y: hidden;
     width: 1080px;
     height: 590px;
     box-shadow: 0 0 20px black;
-    z-index:1;
+    z-index: 1;
 }
-.rightcard{
+
+.rightcard {
     position: relative;
     align-self: flex-end;
     margin: 30px;
@@ -302,60 +331,68 @@
     width: 1080px;
     height: 590px;
     box-shadow: 0 0 20px black;
-    z-index:1;
+    z-index: 1;
 }
 
 
 .leftcard::before,
-.rightcard::before{
+.rightcard::before {
     position: absolute;
-content: "";
-/* background-color: #1f1f1f; */
-background: linear-gradient(
-        90deg,
-        rgba(0, 123, 255, 0.35),
-        rgba(0, 200, 255, 0.15)
-    );
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-z-index: 0;
-transform-origin: left;
-transition: all 0.8s;
-transform: scaleX(0);
+    content: "";
+    background: linear-gradient(90deg,
+            rgba(0, 123, 255, 0.35),
+            rgba(0, 200, 255, 0.15));
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transform-origin: left;
+    transition: all 0.8s;
+    transform: scaleX(0);
 }
 
 .leftcard:hover::before,
-.rightcard:hover::before{
+.rightcard:hover::before {
     opacity: 0.5;
     z-index: -1;
     transform: scaleX(1);
 }
 
 .leftcard,
-.rightcard{
+.rightcard {
     padding: 100px 0 100px 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 30px;
-    
-}
 
-.cardimg{
-    /* margin: auto; */
 }
 
 #card1 img,
 #card2 img,
 #card3 img,
-#card4 img{
+#card4 img {
     margin-right: 5px;
     height: 50px;
     width: 50px;
 }
 
-.cardifo{
+.cardifo {
     color: white;
 }
+
+
+.bbuton button {
+    color: white;
+    padding: 12px;
+    width: 120px;
+    background-color: #f84949;
+    box-shadow: 0 0 4px black;
+    border: 0 transparent;
+    position: relative;
+    z-index: 1;
+
+}
+
+/* ****project-section END**** */
