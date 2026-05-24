@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href=""> -->
+
+    
 </head>
+
 <body>
-    <h1>
-        hello world
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nulla quasi asperiores autem, laboriosam alias incidunt dolores doloremque provident ducimus molestiae aperiam veniam nobis repudiandae maxime? Labore laboriosam perspiciatis corporis.
-    </h1>
+    <div class="wrapper">
+
+        <div class="container">
+            <!-- header -->
+
+            <div class="header">
+                <div class="name">
+                    <img src="Images/userAsset/A.icon.png" alt="A letter">
+                    <h2>ayush Singh</h2>
+                </div>
+
+                <div class="navs">
+                    <ol>
+                        <li>Projects</li>
+                        <li>Skills</li>
+                        <li>Contact Me</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- ****HEADER SECTION END**** -->
+
+            <!-- HERO SECTION START -->
+
+            <div class="herosection">
+                <div class="left">
+                    
+          I am a 
+                    <span class="role"></span>
+<span class="typed-cursor" aria-hidden="true">|</span>
+                </div>
+                <div class="heroimg">
+                    <img src="Images/userAsset/userimage.jpeg" alt="">
+                    <img src="Images/userAsset/circle.png" alt="">
+                    <img src="Images/userAsset/cube.png" alt="">
+                    <img src="Images/userAsset/dots.png" alt="">
+                    <img src="Images/userAsset/plus.png" alt="">
+                    <img src="Images/userAsset/zigzags.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    var typeData = new Typed(".role", {
+      strings: [
+        "Full Stack Developer",
+        "Web Developer",
+        "UI-UX Designer",
+        "Backend Developer",
+        "Coder",
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+  </script>
 
 </body>
+
 </html>
