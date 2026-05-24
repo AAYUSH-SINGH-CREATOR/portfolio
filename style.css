@@ -1,18 +1,19 @@
-*{
+* {
     font-family: "Be Vietnam Pro", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* font-family: ; */
     @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
     .be-vietnam-pro-thin {
-  font-family: "Be Vietnam Pro", sans-serif;
-  /* font-weight: 100; */
-  /* font-style: normal; */
-}
+        font-family: "Be Vietnam Pro", sans-serif;
+        /* font-weight: 100; */
+        /* font-style: normal; */
+    }
 }
 
-.wrapper{
+.wrapper {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,19 +22,19 @@
 
 }
 
-.container{
+.container {
     border: 3px dotted black;
     width: 1350px;
 }
 
-.header{
+.header {
     /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.name{
+.name {
     /* border: 2px solid orangered; */
     padding: 25px;
     display: flex;
@@ -41,16 +42,16 @@
     color: #000000;
 }
 
-.name h2{
+.name h2 {
     padding-top: 7px;
 }
 
-.name img{
-   height: 50px;
-   width: 45px;
+.name img {
+    height: 50px;
+    width: 45px;
 }
 
-.navs ol{
+.navs ol {
     padding: 25px;
     font-size: 20px;
     color: #1f1f1f;
@@ -60,52 +61,73 @@
 }
 
 
-
-
-.herosection{
-    border: 2px solid red;
+.herosection {
+    position: relative;
     display: flex;
     justify-content: space-between;
 
 }
 
-.herosection h2{
+.herosection h2 {
     font-size: 35px;
 }
 
-.left{
+.left {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 50px;
-    /* gap: 10px; */
 }
 
-.role{
+.role {
     color: #f84949;
     font-size: 45px;
 }
-.role1{
+
+.role1 {
     font-size: 45px;
 }
 
+#bbutton {
+    color: white;
+    padding: 12px;
+    width: 120px;
+    background-color: #f84949;
+    box-shadow: 0 0 4px black;
+    border: 0 transparent;
+    position: relative;
+    z-index: 1;
+}
 
-/* 
-.heroimg{
-    padding: auto;
-} */
+.slider::before {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    transform-origin: left;
+    transition: all 0.8s;
+    transform: scaleX(0);
+}
 
-.hero-wrapper{
-    border:2px solid #000000;
+.slider:hover::before {
+    z-index: -1;
+    transform: scaleX(1);
+}
+
+.hero-wrapper {
     position: relative;
     width: fit-content;
 }
 
-.decor{
+.decor {
     position: absolute;
 }
 
-.heroji{
+.heroji {
     /* position: relative; */
     display: block;
     width: 100%;
@@ -116,117 +138,118 @@
     border: 30px solid whitesmoke;
     filter: grayscale(1);
 
- animation: animehero 3s linear 0ms infinite normal;
+    animation: animehero 3s linear 0ms infinite normal;
 }
 
-@keyframes animehero{
-    0%{
+@keyframes animehero {
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         box-shadow: 0 0 10px #000000;
         transform: scale(0.8);
         filter: grayscale(0);
-        
+
     }
-    100%{
+
+    100% {
         transform: scale(1);
 
     }
 }
 
-#circle{
+#circle {
     bottom: 3%;
     left: 5%;
     animation: animecircle 3s linear infinite normal;
 }
 
 
-@keyframes animecircle{
-    0%{
-        
-    }
-    50%{
+@keyframes animecircle {
+    0% {}
+
+    50% {
         transform: translateX(100%) translateY(-70%);
     }
-    100%{
+
+    100% {
         transform: translateX(0) translateY(0);
     }
 }
 
 
 
-#dots{
+#dots {
     bottom: 0.1%;
     right: 0%;
     animation: animedots 3s linear infinite normal;
 }
 
-@keyframes animedots{
-    0%{
-        
-    }
-    50%{
+@keyframes animedots {
+    0% {}
+
+    50% {
         transform: translateX(-30%) translateY(-20%);
     }
-    100%{
+
+    100% {
         transform: translateX(0) translateY(0);
     }
 }
 
-#zigzag{
+#zigzag {
     top: 5%;
     left: 3%;
     animation: animezigzag 3s linear infinite normal;
 }
 
-@keyframes animezigzag{
-    0%{
-        
-    }
-    50%{
+@keyframes animezigzag {
+    0% {}
+
+    50% {
         transform: translateX(100%) translateY(20%);
     }
-    100%{
+
+    100% {
         transform: translateX(0) translateY(0);
     }
 }
 
 
-#plus{
+#plus {
     top: 2%;
     left: 50%;
     animation: animeplus 3s linear infinite normal;
 }
 
 
-@keyframes animeplus{
-    0%{
-        
-    }
-    50%{
+@keyframes animeplus {
+    0% {}
+
+    50% {
         transform: translateY(100%);
     }
-    100%{
-        transform:translateY(0);
+
+    100% {
+        transform: translateY(0);
     }
 }
 
-#cube{
+#cube {
     top: 2%;
     right: 2%;
     animation: animecube 3s linear infinite normal;
 }
 
-@keyframes animecube{
-    0%{
-        
-    }
-    50%{
+@keyframes animecube {
+    0% {}
+
+    50% {
         transform: translateX(-100%) translateY(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(0) translateY(0);
     }
 }
-
