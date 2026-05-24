@@ -58,3 +58,69 @@
     display: flex;
     gap: 55px;
 }
+
+
+
+
+.herosection{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.herosection h2{
+    font-size: 35px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 50px;
+    /* gap: 10px; */
+}
+
+.role{
+    color: #f84949;
+    font-size: 45px;
+}
+.role1{
+    font-size: 45px;
+}
+
+
+
+.heroimg{
+    padding: auto;
+}
+
+.heroji{
+    position: relative;
+    margin: auto;
+    height: 450px;
+    width: 350px;
+    background-size: cover;
+    border: 30px solid whitesmoke;
+    filter: grayscale(1);
+
+ /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+ animation: animehero 4s linear 0ms infinite normal;
+}
+
+@keyframes animehero{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        box-shadow: 0 0 10px #000000;
+        transform: scale(0.8);
+        filter: grayscale(0);
+        
+    }
+    100%{
+        transform: scale(1);
+
+    }
+}
+
