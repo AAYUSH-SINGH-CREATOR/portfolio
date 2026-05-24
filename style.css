@@ -90,13 +90,25 @@
 }
 
 
-
+/* 
 .heroimg{
     padding: auto;
+} */
+
+.hero-wrapper{
+    border:2px solid #000000;
+    position: relative;
+    width: fit-content;
+}
+
+.decor{
+    position: absolute;
 }
 
 .heroji{
-    position: relative;
+    /* position: relative; */
+    display: block;
+    width: 100%;
     margin: auto;
     height: 450px;
     width: 350px;
@@ -104,8 +116,7 @@
     border: 30px solid whitesmoke;
     filter: grayscale(1);
 
- /* animation: name duration timing-function delay iteration-count direction fill-mode; */
- animation: animehero 4s linear 0ms infinite normal;
+ animation: animehero 3s linear 0ms infinite normal;
 }
 
 @keyframes animehero{
@@ -121,6 +132,101 @@
     100%{
         transform: scale(1);
 
+    }
+}
+
+#circle{
+    bottom: 3%;
+    left: 5%;
+    animation: animecircle 3s linear infinite normal;
+}
+
+
+@keyframes animecircle{
+    0%{
+        
+    }
+    50%{
+        transform: translateX(100%) translateY(-70%);
+    }
+    100%{
+        transform: translateX(0) translateY(0);
+    }
+}
+
+
+
+#dots{
+    bottom: 0.1%;
+    right: 0%;
+    animation: animedots 3s linear infinite normal;
+}
+
+@keyframes animedots{
+    0%{
+        
+    }
+    50%{
+        transform: translateX(-30%) translateY(-20%);
+    }
+    100%{
+        transform: translateX(0) translateY(0);
+    }
+}
+
+#zigzag{
+    top: 5%;
+    left: 3%;
+    animation: animezigzag 3s linear infinite normal;
+}
+
+@keyframes animezigzag{
+    0%{
+        
+    }
+    50%{
+        transform: translateX(100%) translateY(20%);
+    }
+    100%{
+        transform: translateX(0) translateY(0);
+    }
+}
+
+
+#plus{
+    top: 2%;
+    left: 50%;
+    animation: animeplus 3s linear infinite normal;
+}
+
+
+@keyframes animeplus{
+    0%{
+        
+    }
+    50%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+#cube{
+    top: 2%;
+    right: 2%;
+    animation: animecube 3s linear infinite normal;
+}
+
+@keyframes animecube{
+    0%{
+        
+    }
+    50%{
+        transform: translateX(-100%) translateY(100%);
+    }
+    100%{
+        transform: translateX(0) translateY(0);
     }
 }
 
