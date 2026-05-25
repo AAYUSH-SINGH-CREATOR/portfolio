@@ -528,3 +528,8 @@
     font-size: 20px;
     text-align: center;
 }
+ form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ }
