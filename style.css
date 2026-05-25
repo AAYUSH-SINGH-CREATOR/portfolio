@@ -67,6 +67,10 @@
     color: #1f1f1f;
 }
 
+.navs ol a:hover{
+    color: #e84949;
+}
+
 
 .herosection {
     position: relative;
@@ -532,4 +536,38 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+ }
+
+#nav2{
+    margin: 20px 0 0 50px;
+}
+
+
+#nav2 ol a{
+  color: #d1d5db;
+}
+
+#nav2 ol a:hover{
+      color: #00bfff;
+     
+}
+
+ .footer{
+    position: relative;
+    margin-top: 50px;
+    background-color: #343d68;
+    height: 300px;
+    width: 100vw;
+ }
+
+ .footer h1{
+    color: #20284d;
+    position: absolute;
+    font-size: 100px;
+    bottom: 0;
+
+  /* background: linear-gradient(90deg, #00bfff, #00ffff);
+  -webkit-background-clip: text;
+  color: transparent; */
+
  }
